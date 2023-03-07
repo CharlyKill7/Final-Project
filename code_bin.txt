@@ -1,0 +1,43 @@
+'''
+while True:
+    # Leer un fragmento de audio
+    data = stream.read(4000, exception_on_overflow=False)
+
+    # Alimentar el fragmento de audio al reconocedor de voz
+    if rec.AcceptWaveform(data):
+        # Obtener la transcripción
+        result = rec.Result()
+        if 'luna' in result:
+            while 'pluto' not in result:
+            # Imprimir la transcripción
+            print(result)
+            '''
+
+'''
+# Definir la palabra clave
+KEYWORD1 = "LUNA"
+KEYWORD2 = "PLUTÓN"
+
+# Esperar a que se diga la palabra clave para activar la transcripción
+while True:
+    data = stream.read(4000, exception_on_overflow=False)
+    if KEYWORD1 in rec.PartialResult():
+        print(rec.PartialResult())
+        break
+
+# Activar la transcripción
+while True:
+    data = stream.read(4000, exception_on_overflow=False)
+
+    # Verificar si se dice la palabra clave para detener la transcripción
+    if KEYWORD2 in rec.PartialResult():
+        break
+
+    # Alimentar el fragmento de audio al reconocedor de voz
+    if rec.AcceptWaveform(data):
+        # Obtener la transcripción
+        result = rec.Result()
+
+        # Imprimir la transcripción
+        print(result)
+'''
