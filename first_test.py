@@ -33,9 +33,7 @@ rec = vosk.KaldiRecognizer(model, 16000)
 # Variables de control
 grabando = False
 
-while True:
-    message = "Hello world" # Mensaje a enviar
-    socket.send_string(message)
+while True:   
     # Leer un fragmento de audio
     data = stream.read(4000, exception_on_overflow=False)
     # Alimentar el fragmento de audio al reconocedor de voz
@@ -51,6 +49,7 @@ while True:
                     if 'xt" : ""' not in result2:
                         time.sleep(0.5)
                         print(result2)
+                        socket.send_string(result2)
                         if clave_stop in result2:
                             grabando = False
                             

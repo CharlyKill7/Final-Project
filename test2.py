@@ -8,7 +8,7 @@ socket.setsockopt_string(zmq.SUBSCRIBE, "")
 
 while True:
     print('a')
-    message = socket.recv_string() # Esperar un mensaje
-    print("Mensaje recibido: {}".format(message)) # Procesar el mensaje recibido
+    result2 = socket.recv_string() # Esperar un mensaje
+    print("Mensaje recibido: {}".format(result2)) # Procesar el mensaje recibido
 
 
