@@ -5,7 +5,7 @@ import zmq
 
 context = zmq.Context()
 socket = context.socket(zmq.PUB)
-socket.bind("tcp://10.0.0.109:5555")
+socket.bind("tcp://127.0.0.1:5555")
 
 # Cargar el modelo de lenguaje en español
 model = vosk.Model("models/vosk-model-es-0.42")
