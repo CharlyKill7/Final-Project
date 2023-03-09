@@ -4,8 +4,8 @@ import time
 import zmq
 
 context = zmq.Context()
-socket = context.socket(zmq.PUB)
-socket.bind("tcp://127.0.0.1:5555")
+socket_pub = context.socket(zmq.PUB)
+socket_pub.bind("tcp://127.0.0.1:5555")
 
 # Cargar el modelo de lenguaje en español
 model = vosk.Model("models/vosk-model-es-0.42")
@@ -46,10 +46,32 @@ while True:
                 data = stream.read(4000, exception_on_overflow=False)
                 if rec.AcceptWaveform(data):
                     result2 = rec.Result()
+                    if 'whatsapp' in result2 and 'xt" : ""' not in result2:
+                        time.sleep(0.2)
+                        print(result2)
+                        socket_pub.send_string(result2, zmq.SNDMORE)
+                        socket_pub.send_string('whatsapp')
+                        if clave_stop in result2:
+                            grabando = False
+                                
+'''
+while True:   
+    # Leer un fragmento de audio
+    data = stream.read(4000, exception_on_overflow=False)
+    # Alimentar el fragmento de audio al reconocedor de voz
+    if rec.AcceptWaveform(data):
+        # Obtener la transcripción
+        result = rec.Result()
+        if clave in result:
+            grabando = True
+            while grabando:
+                data = stream.read(4000, exception_on_overflow=False)
+                if rec.AcceptWaveform(data):
+                    result2 = rec.Result()
                     if 'xt" : ""' not in result2:
-                        time.sleep(0.5)
+                        time.sleep(0.4)
                         print(result2)
                         socket.send_string(result2)
                         if clave_stop in result2:
                             grabando = False
-                            
+'''
