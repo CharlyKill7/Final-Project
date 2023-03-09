@@ -1,6 +1,8 @@
 def procesar_mensaje(message):
-    
-    words = mensaje.split()
+
+    raw = message.split('"')[-2]
+
+    words = raw.split()
 
     mode = words[0]
 
@@ -11,4 +13,10 @@ def procesar_mensaje(message):
     name = ' '.join(words[1:indext])
 
     return mode, text, name
+
+
+
+
+
+
 
