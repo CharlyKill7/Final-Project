@@ -9,7 +9,7 @@ import tqdm
 import warnings
 warnings.filterwarnings('ignore')
 
-from functions import procesar_mensaje
+from functions import get_barra, procesar_mensaje2
 
 options=Options()
 
@@ -22,7 +22,7 @@ options.add_experimental_option("detach", True)     #Esta opción corrige el err
 
 context = zmq.Context()
 socket_rec = context.socket(zmq.SUB)
-socket_rec.connect("tcp://127.0.0.1:5555")
+socket_rec.connect("tcp://127.0.0.1:7777")
 socket_rec.setsockopt_string(zmq.SUBSCRIBE, "")
 
 
@@ -30,9 +30,12 @@ while True:
 
     message = socket_rec.recv_string()
 
-    print(message)
+    try:
 
-    mode, text, name = procesar_mensaje(message)
+        mode, text, name = procesar_mensaje2(message)
+    
+    except:
+        break
 
     print(f"Modo: {mode}")
     print(f"Texto: {text}")
@@ -42,10 +45,11 @@ while True:
     driver=webdriver.Chrome(PATH, options=options)     
     driver.get('https://web.whatsapp.com/')
 
-    time.sleep(5)
+    time.sleep(10)
 
-    busca = driver.find_element(By.XPATH, '//*[@id="side"]/div[1]/div/div/div[2]/div/div[2]')
+    busca = driver.find_element(By.XPATH, '//*[@id="side"]/div[1]/div/div/div[2]/div/div[1]/p')
     busca.click() 
+    busca.click()
     busca.send_keys(name)
     time.sleep(2)
     busca.click()

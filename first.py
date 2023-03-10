@@ -1,19 +1,17 @@
 import vosk
-import os
 import time
 import zmq
+import pyaudio
 
 context = zmq.Context()
 socket_pub = context.socket(zmq.PUB)
 socket_pub.bind("tcp://127.0.0.1:5555")
 
 # Cargar el modelo de lenguaje en español
-model = vosk.Model("models/vosk-model-es-0.42")
+modelo = vosk.Model("models/vosk-model-es-0.42")
 
 # Crear el reconocedor de voz
-rec = vosk.KaldiRecognizer(model, 16000)
-
-import pyaudio
+rec = vosk.KaldiRecognizer(modelo, 16000)
 
 # Configurar el dispositivo de audio
 audio = pyaudio.PyAudio()
@@ -28,7 +26,7 @@ clave = "luna"
 clave_stop = "tierra"
 
 # Inicializar el reconocedor de voz
-rec = vosk.KaldiRecognizer(model, 16000)
+rec = vosk.KaldiRecognizer(modelo, 16000)
 
 # Variables de control
 grabando = False
