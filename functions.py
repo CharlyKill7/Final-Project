@@ -27,8 +27,10 @@ def procesar_mensaje2(message):
 
     if 'texto' in words:
         index_texto = words.index('texto')
+
     if index_texto < len(words) - 1:
         text = ' '.join(words[index_texto+1:])
+        
     if index_texto > 1:
         name = ' '.join(words[1:index_texto])
         
