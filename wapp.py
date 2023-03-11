@@ -11,8 +11,11 @@ import zmq
 import tqdm
 import warnings
 warnings.filterwarnings('ignore')
+import logging
 
 from functions import procesar_mensaje2
+
+logging.basicConfig(filename='log.txt', level=logging.DEBUG)
 
 options=Options()
 
@@ -45,7 +48,7 @@ while True:
         driver=webdriver.Chrome(PATH, options=options)
         driver.get('https://web.whatsapp.com/')
 
-        wait = WebDriverWait(driver, 10)  # Wait for up to 10 seconds
+        wait = WebDriverWait(driver, 30)  # Wait for up to 10 seconds
 
         busca = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="side"]/div[1]/div/div/div[2]/div/div[1]/p')))
         busca.click()
@@ -69,8 +72,15 @@ while True:
 
         driver.quit() 
 
-    except:
         continue
+
+    except Exception as e:
+        logging.error(f"Ocurrió un error: {e}")
+        continue
+    
+        time.sleep(1)
+
+
 
 
 

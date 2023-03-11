@@ -53,7 +53,7 @@ def get_barra2(x):
             return alternatives[0]['transcript']
     return None
 
-  
+
 
 
 
