@@ -68,7 +68,7 @@ while True:
 
         ent = driver.find_element(By.XPATH,'//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[2]/button')
         ent.click()
-        time.sleep(0.5)
+        time.sleep(0.8)
 
         driver.quit() 
 
@@ -76,9 +76,10 @@ while True:
 
     except Exception as e:
         logging.error(f"Ocurrió un error: {e}")
+        time.sleep(1)
         continue
     
-        time.sleep(1)
+        
 
 
 

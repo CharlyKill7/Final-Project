@@ -64,8 +64,12 @@ while True:
                     mensaje = result
                     enviando_mensaje = True
                     threading.Thread(target=enviar_mensaje, args=(mensaje,)).start()
-                    # no necesitas el "continue" aquí, ya que la función enviar_mensaje() se ejecuta en un hilo separado
-                    
+
+                if result.split()[0] == 'consulta':
+                    print('chat msg')
+                    mensaje = result
+                    enviando_mensaje = True
+                    threading.Thread(target=enviar_mensaje, args=(mensaje,)).start()   
                 
                 # Esperar a que se complete el envío del mensaje actual antes de continuar
                 while enviando_mensaje:

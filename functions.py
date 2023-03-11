@@ -53,6 +53,15 @@ def get_barra2(x):
             return alternatives[0]['transcript']
     return None
 
+def procesar_chat(message):
+
+    words = message.split()
+
+    mode = words[0]
+
+    text = ' '.join(words[1:])
+
+    return mode, text
 
 
 
