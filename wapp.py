@@ -35,6 +35,7 @@ while True:
 
     try:
         message = socket_rec.recv_string()
+        
         mode, text, name = procesar_mensaje2(message)
 
         if mode != 'whatsapp':
@@ -68,18 +69,20 @@ while True:
 
         ent = driver.find_element(By.XPATH,'//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[2]/button')
         ent.click()
-        time.sleep(0.4)
+        time.sleep(1.5)
 
-        driver.quit() 
+        driver.quit()
 
         continue
 
     except Exception as e:
         logging.error(f"Ocurrió un error: {e}")
+        driver.quit()
         time.sleep(1)
         continue
-    
-        
+
+
+
 
 
 

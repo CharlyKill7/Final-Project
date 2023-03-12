@@ -28,7 +28,7 @@ grabando = False
 enviando_mensaje = False
 lock = threading.Lock()
 
-time.sleep(7)
+time.sleep(1)
 
 def enviar_mensaje(mensaje):
     global enviando_mensaje

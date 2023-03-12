@@ -87,26 +87,3 @@ while True:
         time.sleep(0.5)
         continue
     
-        
-
-
-
-
-
-'''
-
-while True:
-
-    try:
-        print('1')
-        message = socket_rec.recv_string()
-
-        if 'consulta' in message:
-            mode, text = procesar_chat(message)
-            print(mode)
-            print(text)
-
-    except:
-        continue
-
-'''

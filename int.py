@@ -8,8 +8,10 @@ socket_rec.setsockopt_string(zmq.SUBSCRIBE, "");
 while True:
 
     try:
+        print('-----------')
         message = socket_rec.recv_string()
         print(message)
-
+        print('-----------')
+        
     except:
         continue
