@@ -50,6 +50,7 @@ while True:
             if not grabando and clave in result.lower():
                 print('2')
                 grabando = True
+                socket_pub.send_string('logo')
                 print("Grabando...")
                 
             elif grabando and clave_stop in result.lower():
@@ -77,13 +78,11 @@ while True:
                 
                 # establecer enviando_mensaje en False después de esperar el mensaje actual
                 enviando_mensaje = False
-            
-            time.sleep(0.2)
             print('3')
             
     except Exception as e:
         print("Ocurrió un error:", e)
         logging.error(f"Ocurrió un error: {e}")
-        time.sleep(0.2)
+        time.sleep(0.1)
         continue
 
