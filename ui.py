@@ -1,78 +1,63 @@
-from PyQt5 import QtCore, QtGui, QtWidgets
-import sys
+import PySimpleGUI as sg
 import zmq
-import threading
+import tkinter as tk
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(400, 400)
-        
-        # Cargamos la imagen de la luna
-        self.luna = QtGui.QPixmap(r"img\crescent-moon-moon-svgrepo-com.svg")
-        self.luna_label = QtWidgets.QLabel(MainWindow)
-        self.luna_label.setPixmap(self.luna)
-        self.luna_label.setGeometry(QtCore.QRect(0, 0, 50, 50))
-        
-        # Agregamos un widget de texto para imprimir los mensajes de la terminal
-        self.terminal_output = QtWidgets.QTextEdit(MainWindow)
-        self.terminal_output.setGeometry(QtCore.QRect(50, 50, 350, 300))
-        
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+sg.LOOK_AND_FEEL_TABLE['Moon'] = {'BACKGROUND': '#2B2D42',
+                                            'TEXT': '#FFD700',
+                                            'INPUT': '#2B2D42',
+                                            'TEXT_INPUT': '#FFD700',
+                                            'SCROLL': '#2B2D42',
+                                            'BUTTON': ('#C0C0C0', '#2B2D42'),
+                                            'PROGRESS': ('#2B2D42', '#2B2D42'),
+                                            'BORDER': 0, 'SLIDER_DEPTH': 0, 'PROGRESS_DEPTH': 0}
 
-    def retranslateUi(self, MainWindow):
-        _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Luna"))
+# Switch to use your newly created theme
+sg.theme('Moon')
+sg.set_options(font=('Consolas', 12))#, 'bold'))
 
-    def set_luna(self, activo=True):
-        # Actualizamos la imagen de la luna segun si el sistema esta activo o no
-        if activo:
-            self.luna = QtGui.QPixmap("luna.png")
-        else:
-            self.luna = QtGui.QPixmap("luna_inactiva.png")
-        self.luna_label.setPixmap(self.luna)
-        
-    def show_terminal_output(self, output):
-        # Actualizamos el widget de texto con la salida de la terminal
-        self.terminal_output.setText(output)
-        
-    def show_msg_enviado(self):
-        # Mostramos un mensaje de enviado con exito
-        QtWidgets.QMessageBox.information(self, "Mensaje enviado", "Mensaje enviado con éxito")
+context = zmq.Context()
+socket_rec = context.socket(zmq.SUB)
+socket_rec.connect("tcp://127.0.0.1:7788")
+socket_rec.setsockopt_string(zmq.SUBSCRIBE, "")
 
-class LunaUI(QtWidgets.QMainWindow, Ui_MainWindow):
-    def __init__(self):
-        super().__init__()
-        self.setupUi(self)
-        self.context = zmq.Context()
-        self.socket_sub = self.context.socket(zmq.SUB)
-        self.socket_sub.connect("tcp://127.0.0.1:7777")
-        self.socket_sub.subscribe("")
-        self.socket_thread = threading.Thread(target=self.recibir_mensajes)
-        self.socket_thread.start()
-    
-    def recibir_mensajes(self):
+while True:
+    try:
+        message = socket_rec.recv_string(flags=zmq.NOBLOCK)
+        layout = [#[sg.Text('Respuesta', font='Any 15')],
+                  [sg.Multiline(size=(80, 20), key='-OUTPUT-')],
+                  [sg.Button('Cerrar'), sg.Button('Copiar')]]
+
+        root = tk.Tk()
+        root.withdraw()
+        screen_width = root.winfo_screenwidth()
+        screen_height = root.winfo_screenheight()
+        window = sg.Window('LUNA', 
+                           layout, 
+                           size=(400, 300), 
+                           location=(screen_width - 415, screen_height - 395), 
+                           grab_anywhere=True, 
+                           resizable=True,
+                           background_color='#2B2D42',
+                           #titlebar_background_color='#000000', 
+                           #titlebar_text_color='#C0C0C0', 
+                           titlebar_font='bold', 
+                           #titlebar_icon=r"img\moon.ico", 
+                           finalize=True)
+        window.TKroot.attributes("-topmost", True)
+        
         while True:
-            try:
-                mensaje = self.socket_sub.recv_string()
-                print(mensaje)
-                self.show_terminal_output(mensaje)
-                self.show_msg_enviado()
-                
-            except Exception as e:
-                print("Ocurrió un error al recibir un mensaje:", e)
-                continue
+            event, values = window.read(timeout=10)
+            if event == sg.WIN_CLOSED or event == 'Cerrar':
+                window.close()
+                break
+            if message:
+                window['-OUTPUT-'].print(message)
+                message = None
+            if event == 'Copiar':
+                sg.clipboard_set(window['-OUTPUT-'].get())
 
+    except zmq.Again:
+        pass
 
-# Inicializamos la aplicación de PyQt
-app = QtWidgets.QApplication([])
-
-# Creamos la ventana principal
-ui = LunaUI()
-
-# Mostramos la ventana principal
-ui.show()
-
-# Ejecutamos el event loop principal de PyQt
-sys.exit(app.exec_())
+socket_rec.close()
+context.term()
