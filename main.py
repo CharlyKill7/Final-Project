@@ -11,17 +11,13 @@ socket_pub = context.socket(zmq.PUB)
 socket_pub.bind("tcp://127.0.0.1:7777")
 
 r = sr.Recognizer()
-
-r = sr.Recognizer()
 r.pause_threshold = 0.8
 r.phrase_threshold = 0.25
 r.non_speaking_duration = 0.5
 r.energy_threshold = 8000
 
-#mic = sr.Microphone()
 mic = sr.Microphone(device_index=1)
 
-# Definir las palabras clave
 clave = "luna"
 clave_stop = "tierra"
 
@@ -40,7 +36,7 @@ def enviar_mensaje(mensaje):
     # Bloquear el hilo para evitar que se envíen varios mensajes al mismo tiempo
     with lock:
         socket_pub.send(mensaje.encode())
-        enviando_mensaje = False   # establecer enviando_mensaje en False después de enviar el mensaje
+        enviando_mensaje = False   
 
 while True:
     try:
