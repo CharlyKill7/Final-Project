@@ -4,20 +4,22 @@ import zmq
 import threading
 import logging
 
-logging.basicConfig(filename='log.txt', level=logging.DEBUG)
+logging.basicConfig(filename='log_main.txt', level=logging.DEBUG)
 
 context = zmq.Context()
 socket_pub = context.socket(zmq.PUB)
 socket_pub.bind("tcp://127.0.0.1:7777")
 
-# Configurar el dispositivo de audio
 r = sr.Recognizer()
-r.pause_threshold = 1
-r.phrase_threshold = 0.25
-r.non_speaking_duration = 1
-r.energy_threshold = 1500
 
-mic = sr.Microphone()
+r = sr.Recognizer()
+r.pause_threshold = 0.8
+r.phrase_threshold = 0.25
+r.non_speaking_duration = 0.5
+r.energy_threshold = 8000
+
+#mic = sr.Microphone()
+mic = sr.Microphone(device_index=1)
 
 # Definir las palabras clave
 clave = "luna"
@@ -28,7 +30,9 @@ grabando = False
 enviando_mensaje = False
 lock = threading.Lock()
 
-time.sleep(1)
+print('Main Ready')
+
+time.sleep(0.5)
 
 def enviar_mensaje(mensaje):
     global enviando_mensaje
@@ -40,10 +44,15 @@ def enviar_mensaje(mensaje):
 
 while True:
     try:
+        print('0')
         # Leer un fragmento de audio
         with mic as fuente:
+            print('0.5')
             r.adjust_for_ambient_noise(fuente)
-            sound = r.listen(fuente)
+            print('0.6')
+            sound = r.listen(fuente, phrase_time_limit=10)
+            print(sound)
+            print('0.75')
             result = r.recognize_google(sound, language="es-ES")
             print('1')
             
@@ -55,6 +64,7 @@ while True:
                 
             elif grabando and clave_stop in result.lower():
                 grabando = False
+                socket_pub.send_string('no_logo')
                 print("Deteniendo...")
                 
             if grabando:
@@ -65,12 +75,24 @@ while True:
                     mensaje = result
                     enviando_mensaje = True
                     threading.Thread(target=enviar_mensaje, args=(mensaje,)).start()
+                    print('2.1')
 
-                if result.split()[0] == 'consulta':
+                elif result.split()[0] == 'consulta':
                     print('chat msg')
                     mensaje = result
                     enviando_mensaje = True
-                    threading.Thread(target=enviar_mensaje, args=(mensaje,)).start()   
+                    threading.Thread(target=enviar_mensaje, args=(mensaje,)).start() 
+                    print('2.2')  
+                
+                elif result.split()[0].lower() == 'youtube':
+                    print('youtube msg')
+                    mensaje = result
+                    enviando_mensaje = True
+                    threading.Thread(target=enviar_mensaje, args=(mensaje,)).start() 
+                    print('2.3')  
+
+                else:
+                    continue
                 
                 # Esperar a que se complete el envío del mensaje actual antes de continuar
                 while enviando_mensaje:
@@ -85,4 +107,3 @@ while True:
         logging.error(f"Ocurrió un error: {e}")
         time.sleep(0.1)
         continue
-

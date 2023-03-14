@@ -1,0 +1,359 @@
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: [Errno -9988] Stream closed
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: [Errno -9988] Stream closed
+ERROR:root:Ocurrió un error: [Errno -9988] Stream closed
+ERROR:root:Ocurrió un error: [Errno -9988] Stream closed
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 'NoneType' object has no attribute 'close'
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: [Errno -9988] Stream closed
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: [Errno -9988] Stream closed
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: [Errno -9988] Stream closed
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: [Errno -9988] Stream closed
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: [Errno -9988] Stream closed
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: [Errno -9988] Stream closed
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: [Errno -9988] Stream closed
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: listening timed out while waiting for phrase to start
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 'Microphone' object has no attribute 'stop_stream'
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 
+ERROR:root:Ocurrió un error: 

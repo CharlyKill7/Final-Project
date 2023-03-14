@@ -7,6 +7,8 @@ socket_rec = context.socket(zmq.SUB)
 socket_rec.connect("tcp://127.0.0.1:7777")
 socket_rec.setsockopt_string(zmq.SUBSCRIBE, "")
 
+print('Logo Ready')
+
 while True:
 
     try:

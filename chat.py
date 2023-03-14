@@ -10,7 +10,7 @@ warnings.filterwarnings('ignore')
 from ps import popenai
 from functions import procesar_chat
 
-logging.basicConfig(filename='log.txt', level=logging.DEBUG)
+logging.basicConfig(filename='log_chat.txt', level=logging.DEBUG)
 
 context = zmq.Context()
 socket_rec = context.socket(zmq.SUB)
@@ -22,6 +22,8 @@ socket_sen.bind("tcp://127.0.0.1:7788")
 
 openai.api_key = popenai
 model_engine = "text-davinci-003"
+
+print('Chat Ready')
 
 def send_message(message, chat_log=None):
     # If chat_log is not None, it should be a list of chat messages that have already been sent

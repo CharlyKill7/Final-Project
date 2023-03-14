@@ -63,6 +63,15 @@ def procesar_chat(message):
 
     return mode, text
 
+def procesar_youtube(message):
+
+    words = message.split()
+
+    mode = words[0]
+
+    text = ' '.join(words[1:])
+
+    return mode, text
 
 
 

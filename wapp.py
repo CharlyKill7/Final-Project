@@ -8,14 +8,13 @@ from selenium.webdriver.support import expected_conditions as EC
 
 import time
 import zmq
-import tqdm
 import warnings
 warnings.filterwarnings('ignore')
 import logging
 
 from functions import procesar_mensaje2
 
-logging.basicConfig(filename='log.txt', level=logging.DEBUG)
+logging.basicConfig(filename='log_wapp.txt', level=logging.DEBUG)
 
 options=Options()
 
@@ -24,17 +23,22 @@ options.add_experimental_option('excludeSwitches', ['enable-automation'])
 options.add_experimental_option('useAutomationExtension', False)
 options.add_argument("--remote-allow-origins=*");
 options.add_argument(r"user-data-dir=C:\Users\elmat\anaconda3\envs\final\Lib\site-packages\selenium")
-options.add_experimental_option("detach", True)    #Esta opción corrige el error de cierre repentino
+#options.add_argument('--headless')                 #Habilitar si no queremos ver la ventana
+#options.add_experimental_option("detach", True)    #Esta opción corrige el error de cierre repentino
 
 context = zmq.Context()
 socket_rec = context.socket(zmq.SUB)
 socket_rec.connect("tcp://127.0.0.1:7777")
 socket_rec.setsockopt_string(zmq.SUBSCRIBE, "");
 
+PATH = ChromeDriverManager().install()
+
+print('Whatsapp Ready')
+
 while True:
 
     try:
-        message = socket_rec.recv_string()
+        message = socket_rec.recv_string(flags=zmq.NOBLOCK)
         mode, text, name = procesar_mensaje2(message)
 
         if mode != 'whatsapp':
@@ -44,7 +48,6 @@ while True:
         print(f"Texto: {text}")
         print(f"Nombre: {name}")
 
-        PATH = ChromeDriverManager().install()
         driver=webdriver.Chrome(PATH, options=options)
         driver.get('https://web.whatsapp.com/')
 
@@ -70,7 +73,7 @@ while True:
         ent.click()
         time.sleep(1.5)
 
-        driver.quit() 
+        driver.close() 
 
         continue
 
@@ -79,15 +82,3 @@ while True:
         time.sleep(1)
         continue
     
-
-
-
-
-
-
-
-
-
-
-
-
