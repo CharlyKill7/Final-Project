@@ -4,6 +4,7 @@ import zmq
 import threading
 import logging
 
+
 logging.basicConfig(filename='log_main.txt', level=logging.DEBUG)
 
 context = zmq.Context()

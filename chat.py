@@ -60,7 +60,7 @@ def send_message(message, chat_log=None):
 
 # Chat loop
 chat_log = []
-print("Bot: Caminaré sobre las cenizas de este bootcamp. ¿Qué necesitas?")
+print("Luna: ¿Qué necesitas?")
 while True:
     try:
         message = socket_rec.recv_string() #input("User: ") 
@@ -71,14 +71,14 @@ while True:
                 chat_log.append({"speaker": "user", "text": text})
                 # Check for specific instructions
                 if "como te llamas" in text.lower():
-                    chat_log.append({"speaker": "bot", "text": "Soy Bot."})
+                    chat_log.append({"speaker": "luna", "text": "Soy Luna."})
                 elif "di tu frase" in text.lower():
-                    chat_log.append({"speaker": "bot", "text": "Del parqué... al parque."})
+                    chat_log.append({"speaker": "luna", "text": "Del parqué... al parque."})
 
                 response = send_message(text, chat_log)
-                chat_log.append({"speaker": "bot", "text": response})
+                chat_log.append({"speaker": "luna", "text": response})
                 socket_sen.send_string(response)
-                print("Bot:", response)
+                print("Luna:", response)
 
         # Save chatlog to file
         with open("chatlog.json", "w") as f:

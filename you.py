@@ -7,13 +7,13 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-import logging
+#import logging
 import zmq
-import logging
 import warnings
 warnings.filterwarnings('ignore')
 
-logging.basicConfig(filename='log_youtube.txt', level=logging.DEBUG)
+# Se comenta esto para que no guarde log, porque suele haberlos y es pesado. Activar en caso de necesidad
+#logging.basicConfig(filename='log_youtube.txt', level=logging.DEBUG)
 
 options=Options()
 
@@ -78,7 +78,7 @@ while True:
                         Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.ENTER)
 
     except Exception as e:
-        logging.error(f"Ocurrió un error: {e}")
+        #logging.error(f"Ocurrió un error: {e}")
         time.sleep(0.1)
         continue
 

@@ -8,6 +8,10 @@ ps.py
 
 /dist
 
+/trash
+
 log.txt
 
 chatlog.json
+
+*.txt

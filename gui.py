@@ -20,7 +20,7 @@ socket_rec = context.socket(zmq.SUB)
 socket_rec.connect("tcp://127.0.0.1:7788")
 socket_rec.setsockopt_string(zmq.SUBSCRIBE, "")
 
-print('UI Ready')
+print('GUI Ready')
 
 while True:
     try:
