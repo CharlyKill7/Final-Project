@@ -9,3 +9,5 @@ ps.py
 /dist
 
 log.txt
+
+chatlog.json

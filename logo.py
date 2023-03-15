@@ -59,6 +59,9 @@ while True:
                 luna = Luna()
                 luna.show()
                 sys.exit(app.exec_())
+                
+        else:
+            continue
 
     except:
         continue

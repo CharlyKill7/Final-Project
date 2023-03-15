@@ -20,7 +20,7 @@ options = Options()
 options.add_experimental_option('excludeSwitches', ['enable-automation'])
 options.add_experimental_option('useAutomationExtension', False)
 options.add_argument("--remote-allow-origins=*");
-options.add_argument(r"user-data-dir=C:\Users\elmat\anaconda3\envs\final\Lib\site-packages\selenium")
+options.add_argument(r"user-data-dir=C:\Users\elmat\anaconda3\envs\luna\Lib\site-packages\selenium2\cookies")
 #options.add_argument('--headless')                 #Habilitar si no queremos ver la ventana
 options.add_experimental_option("detach", True)    #Esta opción corrige el error de cierre repentino
 options.add_argument('--start-minimized')
@@ -29,7 +29,8 @@ options.add_argument('--disable-dev-shm-usage')
 options.add_argument('--no-sandbox')
 options.add_argument('--disable-extensions')
 options.add_argument('--disable-infobars')
-options.add_argument('--remote-debugging-port=9222')
+#options.add_argument('--remote-debugging-port=9222')
+#options.add_experimental_option('debuggerAddress', '127.0.0.1:9222')
 
 def youtube_process():
 
@@ -50,8 +51,8 @@ def youtube_process():
             if mensa.split()[0].lower() != 'youtube':
                 continue
 
-            service = Service(PATH)
-            driver2 = webdriver.Chrome(service=service, options=options)
+            service2 = Service(PATH)
+            driver2 = webdriver.Chrome(service=service2, options=options)
             driver2.get('https://www.google.com/')
 
             wait2 = WebDriverWait(driver2, 30)  # Wait for up to 10 seconds
@@ -73,12 +74,8 @@ def youtube_process():
 
             time.sleep(2)
 
-            publi = wait2.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="skip-button:5"]/span/button')))
-            if publi:
-                publi.click()
-
-            else:
-                pass
+            publi = wait2.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="skip-button:5"]/span/button')))               
+            publi.click()
 
             continue
 
