@@ -15,3 +15,6 @@ log.txt
 chatlog.json
 
 *.txt
+
+/spec
+/spec_0
