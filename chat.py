@@ -36,7 +36,7 @@ def send_message(message, chat_log=None):
     prompt = ""
     for chat in chat_log:
         prompt += chat["speaker"] + ": " + chat["text"] + "\n"
-    prompt += "User: " + message + "\nBot:"
+    prompt += "User: " + message + "\nLuna:"
 
     # Set the authentication header
     headers = {

@@ -9,13 +9,14 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import logging
 import zmq
-import logging
+#import logging
 import warnings
 warnings.filterwarnings('ignore')
 
 from functions import procesar_mensaje2
 
-logging.basicConfig(filename='log_whatsapp.txt', level=logging.DEBUG)
+# Se comenta esto para que no guarde log, porque suele haberlos y es pesado. Activar en caso de necesidad
+# logging.basicConfig(filename='log_whatsapp.txt', level=logging.DEBUG)
 
 options=Options()
 

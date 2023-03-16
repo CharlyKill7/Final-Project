@@ -2,18 +2,17 @@ import PySimpleGUI as sg
 import zmq
 import tkinter as tk
 
-sg.LOOK_AND_FEEL_TABLE['Moon'] = {'BACKGROUND': '#2B2D42',
+sg.LOOK_AND_FEEL_TABLE['Moon'] = {'BACKGROUND': '#263A7A',
                                             'TEXT': '#FFD700',
-                                            'INPUT': '#2B2D42',
+                                            'INPUT': '#263A7A',
                                             'TEXT_INPUT': '#FFD700',
-                                            'SCROLL': '#2B2D42',
-                                            'BUTTON': ('#C0C0C0', '#2B2D42'),
-                                            'PROGRESS': ('#2B2D42', '#2B2D42'),
+                                            'SCROLL': '#263A7A',
+                                            'BUTTON': ('#C0C0C0', '#263A7A'),
+                                            'PROGRESS': ('#263A7A', '#263A7A'),
                                             'BORDER': 0, 'SLIDER_DEPTH': 0, 'PROGRESS_DEPTH': 0}
 
-# Switch to use your newly created theme
 sg.theme('Moon')
-sg.set_options(font=('Consolas', 12))#, 'bold'))
+sg.set_options(font=('Avenir', 11, 'bold'))
 
 context = zmq.Context()
 socket_rec = context.socket(zmq.SUB)
@@ -39,9 +38,7 @@ while True:
                            location=(screen_width - 415, screen_height - 395), 
                            grab_anywhere=True, 
                            resizable=True,
-                           background_color='#2B2D42',
-                           #titlebar_background_color='#000000', 
-                           #titlebar_text_color='#C0C0C0', 
+                           background_color='#263A7A', 
                            titlebar_font='bold', 
                            #titlebar_icon=r"img\moon.ico", 
                            finalize=True)
