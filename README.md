@@ -58,7 +58,22 @@ Así funciona, a grandes rasgos, LUNA - Asistente Virtual por voz.
  
 ## Ejecución
 
-Aunque el enfoque más adecuado sería intentar minimizar el error, probando desde lo más simple a lo más complejo, lo que aquí pretendimos fue probar varios tipos de encoders, sin dejar de mirar, obviamente, la mejor opción en cada caso. Aunque One Hot Encoding suele funcionar bien, decidí utilizarlo sólo para las columnas cuyos valores no tuvieran una relación jerarquica con respecto de la variable objetivo. Éstas fueron remote_ratio y employment_type.
+Para poner en marcha LUNA, se deben seguir los siguientes pasos:
+
+- Crea un entorno virtual nuevo para el proyeto (opcional).
+- Descarga este repositorio en local.
+- Correr el archivo 'pips.ipynb' para instalar las librerías necesarias (en caso de no tenerlas ya instaladas).
+- Especificar rutas de guardado de cookies (opciones de Selenium) en 'you.py' y 'wap.py'.
+- Asegurarse de que los puertos especificados para los sockets de ZeroMQ están libres o, en caso contrario, especificar uno nuevo (en todos los archivos principales).
+- Ejecutar los seis archivos principales a la vez, cada uno con su propia terminal.
+
+En caso de querer hacer un único ejecutable:
+- Desde la terminal, navega hasta la carpeta de proyecto y ejecuta el comando "pyinstaller archivo.py", donde "archivo.py" debe ser remplazado por 'main.py'.
+- Repetir el proceso para los otros cinco archivos. Se crearán dos carpetas nuevas llamadas "build" y "dist", y dentro de ésta última se encuentran los archivos ejecutables creados ('main.exe', 'chat.exe', 'gui.exe', etc) cada uno en una carpeta con su nombre.
+- Doble click en el ejecutable 'LUNA.bat'. En caso de no funcionar, consultar el archivo 'LUNA.txt' y comprobar si las rutas son correctas. En caso de que no lo sean, cambiarlas y después renombrar el archivo con extensión .bat, convirtiéndolo así en el ejecutable principal.
+- Usar el acceso directo (el que tiene icono) donde se prefiera.
+
+Que lo disfruten 
 
 <br>
 <br>
