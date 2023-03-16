@@ -3,7 +3,7 @@
 
 
 
-![portada](https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png)
+![portada]<img "https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png", style="width:70%;"/>
 
 ## Índice
 
