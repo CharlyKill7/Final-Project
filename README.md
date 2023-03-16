@@ -64,7 +64,6 @@ Aunque el enfoque más adecuado sería intentar minimizar el error, probando des
 <br>
 <br>
 
-<div style="text-align: center;">
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
   <img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" alt="luna_logo" style="display: inline-block; width: 30%; height: 30%;">
 </div>>
-</div>
