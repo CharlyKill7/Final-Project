@@ -60,8 +60,10 @@ Así funciona, a grandes rasgos, LUNA - Asistente Virtual por voz.
 
 Aunque el enfoque más adecuado sería intentar minimizar el error, probando desde lo más simple a lo más complejo, lo que aquí pretendimos fue probar varios tipos de encoders, sin dejar de mirar, obviamente, la mejor opción en cada caso. Aunque One Hot Encoding suele funcionar bien, decidí utilizarlo sólo para las columnas cuyos valores no tuvieran una relación jerarquica con respecto de la variable objetivo. Éstas fueron remote_ratio y employment_type.
 
+<br>
+<br>
+<br>
 
-
-
-
-<img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" style="width:45%;"/>
+<div style="text-align: center;">
+  <img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" alt="luna_logo" style="width:45%;" style="display: inline-block;">
+</div>
