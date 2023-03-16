@@ -1,7 +1,6 @@
-# LUNA
-## Asistente Virtual por voz
+# LUNA: Asistente Virtual por voz
 
-<img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" style="width:40%;"/>
+<img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" style="width:60%;"/>
 
 ## Índice
 
