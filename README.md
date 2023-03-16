@@ -1,6 +1,6 @@
-# LUNA: Asistente Virtual por voz
+# LUNA - Asistente Virtual por voz
 
-<img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" style="width:42%;"/>
+<img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" style="width:45%;"/>
 
 ## Índice
 
@@ -15,7 +15,9 @@
 
 ## Descripción del proyecto
 
-Este proyecto es una competición de Kaggle, donde habrá que utilizar Machine Learning para predecir el salario dentro del sector Data, a partir de unos .csv que contienen datos como el puesto, el país de residencia o el tipo de contrato, entre otros. 
+Este proyecto nace de las ganas de seguir aprendiendo. Tras mis primeros dos meses programando, necesitaba poner a prueba las habilidades que he adquirido en el bootcamp de Ironhack, y también ir un poco más allá. Atraído por la parte más "ingeniera" de los datos, he decidido explorar nuevas formas de usar Python para crear un pequeño Asistente Virtual por voz.
+
+LUNA, ese sátelite que, aunque no siempre veamos siempre está, pretende ser un programa en segundo plano que siempre está escuchando.  
 
 ### Restricciones:
 - No está permitido eliminar filas en los datos de testeo o prueba.
