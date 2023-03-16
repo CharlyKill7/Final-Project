@@ -73,11 +73,13 @@ En caso de querer hacer un único ejecutable:
 - Doble click en el ejecutable 'LUNA.bat'. En caso de no funcionar, consultar el archivo 'LUNA.txt' y comprobar si las rutas son correctas. En caso de que no lo sean, cambiarlas y después renombrar el archivo con extensión .bat, convirtiéndolo así en el ejecutable principal.
 - Usar el acceso directo (el que tiene icono) donde se prefiera.
 
-Que lo disfruten 
+Y eso es todo.
+
+Ojalá disfrutéis usando LUNA tanto como yo desarrollándola. ¡Gracias!
 
 <br>
 <br>
 <br>
 
-<img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" alt="luna_logo" style="width: 20%; height: auto;">
+<img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" alt="luna_logo" style="width: 15%; height: auto;">
 
