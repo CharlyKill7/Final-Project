@@ -11,19 +11,19 @@
 
 ## Descripción del proyecto
 
-Este proyecto nace de las ganas de seguir aprendiendo. Tras mis primeros dos meses programando, necesitaba poner a prueba las habilidades que he adquirido en el bootcamp de Ironhack, y también ir un poco más allá. Atraído por la parte más "ingeniera" de los datos, he decidido explorar nuevas formas de usar Python para crear un pequeño Asistente Virtual por voz. LUNA, ese sátelite que, aunque no siempre veamos siempre está, pretende ser un programa en segundo plano que siempre está escuchando. 
+Este proyecto nace de las ganas de seguir aprendiendo. Tras mis primeros dos meses programando, necesitaba poner a prueba las habilidades que he adquirido en el bootcamp de Ironhack, y también ir un poco más allá. Atraído por la parte más "ingeniera" de los datos, he decidido explorar nuevas formas de usar Python para crear un pequeño Asistente Virtual por voz. LUNA, ese sátelite que, aunque no siempre veamos siempre está, pretende ser un programa en segundo plano que siempre está escuchando.
 
-Cuando escucha la palabra 'luna', se activa. En ese momento está preparada para ejecutar cualquiera de las tres funciones básicas que tiene:
+Cuando oye la palabra 'LUNA', se activa. En ese momento está lista para ejecutar cualquiera de las tres funciones básicas que tiene:
 
-- Consultas al Chat GPT: el comando de voz "consulta" + la consulta que deseas realizar.
-- Envío de mensajes por WhatsApp: el comando de voz "whastapp" + "nombre de contacto" + "texto" + "mensaje a enviar".
-- Música o vídeo en YouTube: el comando de voz "youtube" + el título del vídeo que buscas.
+- Consultas al Chat GPT: comando de voz "consulta" + la consulta que deseas realizar.
+- Envío de mensajes por WhatsApp: comando de voz "whastapp" + "nombre de contacto" + "texto" + "mensaje a enviar".
+- Música o vídeo en YouTube: comando de voz "youtube" + el título del vídeo que buscas.
 
-Tanto el envío de WhatsApp como Youtube se ejecutan en ventanas en segundo plano, mientras que la consulta al chat GPT es respondida mediante una ventana emergente con la respuesta, lista para ser copiada. 
+Tanto el envío de WhatsApp como Youtube se ejecutan en ventanas en segundo plano, mientras que la consulta al chat GPT es respondida mediante una ventana emergente con la respuesta en forma de texto, lista para ser copiada. 
 
-Cuando escucha la palabra 'tierra', LUNA se esconde y, aunque no deja de oír hasta el cierre completo del programa, desactiva la escucha activa hasta que vuelva a oir "luna".
+Cuando escucha la palabra 'tierra', LUNA se esconde y, aunque no deja de oír hasta el cierre completo del programa, desactiva la escucha activa hasta que vuelva a oir "LUNA".
 
-Así funciona, a grandes rasgos, LUNA - Asistente Virtual por voz.
+Así funciona, a grandes rasgos, mi pequeño asistente por voz.
 
  
  <a name="archivos"/>
@@ -62,15 +62,15 @@ Para poner en marcha LUNA, se deben seguir los siguientes pasos:
 
 - Crea un entorno virtual nuevo para el proyeto (opcional).
 - Descarga este repositorio en local.
-- Correr el archivo 'pips.ipynb' para instalar las librerías necesarias (en caso de no tenerlas ya instaladas).
-- Especificar rutas de guardado de cookies (opciones de Selenium) en 'you.py' y 'wap.py'.
-- Asegurarse de que los puertos especificados para los sockets de ZeroMQ están libres o, en caso contrario, especificar uno nuevo (en todos los archivos principales).
-- Ejecutar los seis archivos principales a la vez, cada uno con su propia terminal.
+- Corre el archivo 'pips.ipynb' para instalar las librerías necesarias (en caso de no tenerlas ya instaladas).
+- Especifica las rutas de guardado de cookies (opciones de Selenium) en 'you.py' y 'wap.py'.
+- Asegúrate de que los puertos especificados para los sockets de ZeroMQ están libres o, en caso contrario, especifica uno nuevo (en todos los archivos principales).
+- Ejecuta los seis archivos principales a la vez, cada uno con su propia terminal.
 
 En caso de querer hacer un único ejecutable:
 - Desde la terminal, navega hasta la carpeta de proyecto y ejecuta el comando "pyinstaller archivo.py", donde "archivo.py" debe ser remplazado por 'main.py'.
-- Repetir el proceso para los otros cinco archivos. Se crearán dos carpetas nuevas llamadas "build" y "dist", y dentro de ésta última se encuentran los archivos ejecutables creados ('main.exe', 'chat.exe', 'gui.exe', etc) cada uno en una carpeta con su nombre.
-- Doble click en el ejecutable 'LUNA.bat'. En caso de no funcionar, consultar el archivo 'LUNA.txt' y comprobar si las rutas son correctas. En caso de que no lo sean, cambiarlas y después renombrar el archivo con extensión .bat, convirtiéndolo así en el ejecutable principal.
+- Repetir el proceso para los otros cinco archivos. Se crearán dos carpetas nuevas llamadas "build" y "dist", y dentro de ésta última se encuentran los archivos ejecutables creados ('main.exe', 'chat.exe', 'gui.exe', etc), cada uno en una carpeta con su nombre.
+- Doble click en el ejecutable 'LUNA.bat'. En caso de no funcionar, consultar el archivo 'LUNA.txt' y comprobar si las rutas son correctas. En caso de que no lo sean, cambiarlas y después renombrar ese mismo archivo con extensión .bat, convirtiéndolo así en el ejecutable principal.
 - Usar el acceso directo (el que tiene icono) donde se prefiera.
 
 Y eso es todo.
