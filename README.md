@@ -64,6 +64,5 @@ Aunque el enfoque más adecuado sería intentar minimizar el error, probando des
 <br>
 <br>
 
-<div id="imagen-centrada" style="display: block; margin-left: auto; margin-right: auto;">
-  <img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" alt="luna_logo" style="width: 50%; height: auto;">
-</div>
+<img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" alt="luna_logo" style="width: 20%; height: auto;">
+
