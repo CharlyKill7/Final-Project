@@ -1,7 +1,5 @@
 # LUNA - Asistente Virtual por voz
 
-<img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" style="width:45%;"/>
-
 ## Índice
 
 1. [Descripción](#descripción)
@@ -15,30 +13,37 @@
 
 ## Descripción del proyecto
 
-Este proyecto nace de las ganas de seguir aprendiendo. Tras mis primeros dos meses programando, necesitaba poner a prueba las habilidades que he adquirido en el bootcamp de Ironhack, y también ir un poco más allá. Atraído por la parte más "ingeniera" de los datos, he decidido explorar nuevas formas de usar Python para crear un pequeño Asistente Virtual por voz.
+Este proyecto nace de las ganas de seguir aprendiendo. Tras mis primeros dos meses programando, necesitaba poner a prueba las habilidades que he adquirido en el bootcamp de Ironhack, y también ir un poco más allá. Atraído por la parte más "ingeniera" de los datos, he decidido explorar nuevas formas de usar Python para crear un pequeño Asistente Virtual por voz. LUNA, ese sátelite que, aunque no siempre veamos siempre está, pretende ser un programa en segundo plano que siempre está escuchando. 
 
-LUNA, ese sátelite que, aunque no siempre veamos siempre está, pretende ser un programa en segundo plano que siempre está escuchando.  
+Cuando escucha la palabra 'luna', se activa. En ese momento está preparada para ejecutar cualquiera de las tres funciones básicas que tiene:
 
-### Restricciones:
-- No está permitido eliminar filas en los datos de testeo o prueba.
+- Consultas al Chat GPT: el comando de voz "consulta" + la consulta que deseas realizar.
+- Envío de mensajes por WhatsApp: el comando de voz "whastapp" + "nombre de contacto" + "texto" + "mensaje a enviar".
+- Música o vídeo en YouTube: el comando de voz "youtube" + el título del vídeo que buscas.
 
-### Dataset:
-- <em>salaries_data.csv</em>: contiene el conjunto de datos de entrenamiento.
-- <em>testeo.csv</em>: contiene el conjunto de datos de prueba.
-- <em>muestra.csv</em>: ejemplo de formato de la predicción para su carga en Kaggle.
+Tanto el envío de WhatsApp como Youtube se ejecutan en ventanas en segundo plano, mientras que la consulta al chat GPT es respondida mediante una ventana emergente con la respuesta, lista para ser copiada. 
 
-### Objetivo:
- 
-Nuestro objetivo será aplicar y mejorar modelos de Machine Learning, probando varias transformaciones, encodings, hiperparámetros y modelos, con el fin de obtener el menos RMSE que sea posible.
+Cuando escucha la palabra 'tierra', LUNA se esconde y, aunque no deja de oír hasta el cierre completo del programa, desactiva la escucha activa hasta que vuelva a oir "luna".
+
+Así funciona, a grandes rasgos, LUNA - Asistente Virtual por voz.
 
  
- <a name="transformacion"/>
+ <a name="archivos"/>
  
-## Tranformación
+## Archivos
 
-Logicamente, lo primero fue realizar un análisis exploratorio de los datos, comprobando los valores nulos, el tipo de objeto de cada columna, las dimensiones del Dataframe, etc. Este proceso se llevó a cabo en el notebook 'draft', aunque muchas de las pruebas fueron borradas sobre la marcha. También se unificó en una sola columna el salario, quedándonos con salary_in_usd y renombrándola.
+1. Archivos principales (ubicados en la carpeta principal LUNA):
 
-Tras esto, tomamos la precaución de comprobar si había valores en los datos de prueba que no estuvieran en el entrenamiento. Descubrimos así tres columnas con valores distintos: employee_residence, company_location y job_title.
+- <strong>main.py</strong>: script para el reconocimiento de voz y trasncripción.
+- <strong>logo.py</strong>: script para mostrar el logo cuando LUNA se activa.
+- <strong>wap.py</strong>: script para el envío de mensajes de WhatsApp.
+- <strong>you.py</strong>: script para abrir YouTube y poner un vídeo.
+- <strong>chat.py</strong>: script para llamar a la API de OpenAI y usar Chat GPT.
+- <strong>gui.py</strong>: script para la ventana emergente con la respuesta. 
+
+2. 
+
+
 
 <br>
 <br>
@@ -143,3 +148,7 @@ Todo lo expuesto anteriormente es la síntesis de un proceso más largo y farrag
 <strong>Las mejores puntuaciones las obtuve cuando eliminé todas las columnas menos 'experience_level', 'job_title' y 'employee_residence'.</strong>
 	
 Esto invita a pensar que más datos a veces meten más ruido que explicación en los modelos de Machine Learning. Por eso, la principal conclusión que extraigo de este proyecto es que para hacer Machine Learning lo ideal es ir de lo simple a lo complejo, pasando por un millón de pruebas, cada una con su error.	
+
+
+
+<img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" style="width:45%;"/>
