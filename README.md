@@ -65,5 +65,5 @@ Aunque el enfoque más adecuado sería intentar minimizar el error, probando des
 <br>
 
 <div style="text-align: center;">
-  <img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" alt="luna_logo" style="width:45%;" style="display: inline-block;">
+  <img src="https://github.com/CharlyKill7/LUNA/blob/main/img/luna.png" alt="luna_logo" style="display: inline-block;">
 </div>
